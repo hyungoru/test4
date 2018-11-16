@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <title>Bugs_log-in</title>
+    <style>
+        /* Global Css Start*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* border:1px solid red; */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        #main_div {
+            margin: auto;
+            width: 300px;
+        }
+        
+        /*Global Css end*/
+
+        /*Header start*/
+
+        #header_div {
+            height: 120px;
+            background: black;
+            position:relative;
+        }
+        h1{
+            color:orange;
+            text-align: center;
+            padding-top: 40px;
+        }
+        /* #header_div > ul {
+            text-align: right;
+        }
+        #header_div > #main_top {
+            float: right;
+        }
+        #header_div > #main_bottom{
+            position : absolute;
+            bottom:0;
+            left:160px;
+        }
+        #header_div > ul >li {
+            display: inline;
+            margin : 10px;
+        }
+        #header_div > ul >li :hover {
+            color : white;
+        }
+
+        #header_div >h1{
+            clear: both;
+            margin-top:20px;
+            text-align: center;
+        } */
+        /*header end*/
+        
+        /*middle end*/
+        
+        #middle_div {
+            height: 400px;
+            background: gray;
+        }
+        #middle_div > form_div{
+                background : red;    
+                margin :auto;
+                padding : auto;
+        }
+        
+        /*middle end*/
+
+        /* Footer start */
+
+        #footer_div {
+            height: 50px;
+            background: #2E2E2E;
+        }
+
+        /* Footer end */
+    </style>
+</head> 
+
+<body>
+    <div id="main_div">
+        <div id="header_div">
+           <h1> Log-In </h1>
+        </div>
+        <div id="middle_div">
+            <div id="form_div">
+            <form>
+            ID &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name ="id"><br>
+            PWD <input type="password" name="pwd"><br>
+            <input type="submit" value=LOGIN>
+            <input type="reset" value=RESET>
+            <input type="button" value=REGISTER>
+            </form>
+            </div>
+        </div>
+        <div id="footer_div">
+        </div>
+    </div>
+</body>
+
+</html>

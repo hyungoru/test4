@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>register_bugs</title>
+<style>
+/* *{
+    margin:0;
+    padding:0;  
+    border:1px solid red;
+} */
+legned{
+    margin:auto;
+    padding : auto; 
+}
+</style>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>Bugs regist</legend>
+ID <input type="text" name ="id" required><br>
+PWD <input type="password" name="pwd" reuiqred><br>
+MAIL <input type="email" name="email" required><br>
+TEL <input type="tel" name="tel"
+    pattern="[0-9]3{}-[0-9]{4}-[0-9]{4}"
+    title="###-####-####" required
+    ><br>
+<br>
+<a3>Sex :</a3>
+Male <input type="radio" name="gender" value="m">
+Female <input type="radio" name="gender" value="f">
+<br><br><br>
+<a3>----------I'm interted in----------</a3>
+<br>
+Ballad/Dance/Pop <input type="checkbox" name="Ballad/Dance/Pop" value="BDP">
+Hip Hop <input type="checkbox" name="Hip Hop" value="HH">
+R&B <input type="checkbox" name="R&B" value="RB">
+Electronics <input type="checkbox" name="Electronics" value="ET">
+Rock/Metal <input type="checkbox" name="Rock/Metal" value="RM">
+Jazz <input type="checkbox" name="Jazz" value="ZZ">
+<br>
+<input type="submit" value="REGIST">
+</fieldset>
+</form>
+</body>
+</html>

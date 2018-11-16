@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+ul{
+    list-style: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul > li{
+    display : inline;
+    text-transform: uppearcase;
+    letter-spacing: 10px;
+    margin:50px;
+}
+ul > li:hover{
+    font-weight: bold;
+    color:aqua;
+}
+table{
+    margin:auto;
+    width:500px;
+    border-top: 2px double black;
+    border-bottom: 2px double black;
+    border-collapse: collapse;   /*remove invisible collumn line*/
+}
+table > thead{
+    background: darkslategray;
+    color: white;
+}
+table > tbody > tr:nth-child(2n){
+    background: gray;
+}
+table > tbody > tr> td{
+    text-align: center;
+}
+table > tbody > tr > td:last-child{
+    text-align: right;
+}
+table > tbody > tr:hover{
+    background: teal;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:aqua;
+}
+/*h1{
+    display: none; ->  It deletes whole area of h1
+    visibility : hidden;  ->  It just hide it's area  
+}*/
+</style>
+</head>
+<body>
+<h1>List Test</h1>
+<ul>
+    <li><a href="#">First</a></li>
+    <li><a href="#">Second</a></li>
+    <li><a href="#">Third</a></li>
+    <li><a href="#">Fourth</a></li>
+</ul>
+<table>
+    <thead>
+        <tr><th>ID</th><th>NAME</th><th>AMOUNT</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>id01</td><td>JAMES</td><td>\100000</td></tr>
+        <tr><td>id02</td><td>Rodrigez</td><td>\200000</td></tr>
+        <tr><td>id03</td><td>Juan</td><td>\300000</td></tr>
+        <tr><td>id04</td><td>Ricardo</td><td>\400000</td></tr>
+        <tr><td>id05</td><td>Olivia</td><td>\500000</td></tr>
+    </tbody>
+</table>
+</body>
+</html>

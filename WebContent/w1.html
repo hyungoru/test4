@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <title>Bugs_main</title>
+    <style>
+        /* Global Css Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border:1px solid red; */
+}
+a{
+
+    color: orange;
+}
+ul,
+ol {
+    list-style: none;
+}
+
+#main_div {
+    margin: auto;
+    /* width: 1000px; */
+}
+
+/*Global Css end*/
+
+/*Header start*/
+
+#header_div {
+    /* width: 800px; */
+    color:white;
+    height: 130px;
+    background : black;
+    position:relative;
+}
+#header_div > ul {
+    text-align: right;
+}
+#header_div > #main_top {
+    float: right;
+    color:gray;
+}
+#header_div > #main_bottom{
+    position : absolute;
+    bottom:0;
+    left:160px;
+}
+#header_div > ul >li {
+    display: inline;
+    margin : 10px;
+}
+#header_div > ul >li :hover {
+    color : white;
+}
+
+#header_div >h1{
+    clear: both;
+    margin-top:20px;
+    text-align: left;
+    color : orange;
+    font-style:italic;
+}
+#header_div >h1 > a{
+    text-decoration: none;
+}
+#search_bar{
+        padding-left : 200px;
+}
+.search_bar input[type="text"]{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 1000px;
+    margin: 0;
+    padding: 14px;
+}
+
+/*header end*/
+
+/* center start */
+/* #center_div {
+    width: 800px;
+    height: 500px;
+    
+} */
+#center_div >div{
+        float:left;
+}
+#center_div > #left_div {
+    width: 10%;
+    height: 500px;
+    background: #2E2E2E;
+    
+}
+/* #center_div > #left_div > a:hover {
+    text-decoration-line: underline;
+} */
+#center_div > #middle_div {
+    width: 40%;
+    height: 500px;
+    background: white;
+    
+}
+/* #center_div > #middle_div > #middle1{
+    width:40%;
+    height:40%;
+    background:red;
+}
+#center_div > #middle_div > #middle2{
+    width:40%;
+    height:40%;
+    background:blue;
+}
+#center_div > #middle_div > #middle3{
+    width:40%;
+    height:40%;
+    background:green;
+}
+#center_div > #middle_div > #middle4{
+    width:40%;
+    height:40%;
+    background:yellow; 
+}*/
+#center_div > #right_div {
+    width: 50%;
+    height: 500px;
+    background: #2E2E2E;
+}
+#center_div > #right_div > h2{
+    color : white;
+}
+#center_div > #right_div > table > thead{
+    background: orange;
+}
+#center_div > #right_div > table > tbody > tr:nth-child(2n){
+    background: gray;
+}
+#center_div > #right_div > table > tbody > tr:nth-child(2n+1){
+    background: white;
+}
+
+
+/* center end */
+
+/* Footer start */
+
+#footer_div  {
+    float:left;
+    width: 100%;
+    height: auto;
+
+}
+/* #button:hover {
+    color:blue;
+}
+#text1{
+    width:300px;
+    margin:auto;
+    position: relative;
+    
+}
+center_div > menu_left > ul{
+    color : skyblue;
+} */
+img{
+    width:auto;
+    height:120px;
+}
+img:hover {
+    opacity: 0.35;
+   transform: scale(1.05);
+}
+img:hover.slick-slider{transition: 0.5s;}
+
+h4{
+    display : inline;
+    font-size : 12px;
+    position : absolute;
+    top : 50px;
+    left : 5px;
+}
+
+#p2{
+    width:120px;
+    height:120px;
+    float : left;
+    position: relative;
+}
+/* Footer end */
+</style>
+</head>
+
+<body>
+    <div id="main_div">
+        <div id="header_div">
+            <ul id="main_top">
+                <li><a href="w2.html">LOGIN</a></li>
+                <li><a href="w3.html">REGISTER</a></li>
+                <li><a href="http://www.bugscorp.co.kr/?wl_ref=M_footer_03_01">ABOUT US</a></li>
+            </ul>
+            <h1><a href="w1.html"> Bugs! </a></h1>
+            <div id="search_bar">
+                <input type="text" name="name" id="text1" />
+                <input type="button" value="Search" id="button" />
+            </div>
+        </div>
+        <div id="center_div">
+            <div id="left_div">
+                <!-- <ul id="menu_left"> -->
+                <a href="#">>bugs chart</a><br>
+                <a href="#">>What's new?</a><br>
+                <a href="#">>music for you</a><br>
+                <a href="#">>genre</a><br>
+                <a href="#">>music post</a><br>
+                <a href="#">>radio</a><br>
+                <a href="#">>my playlist</a><br>
+            </div>
+            <div id="middle_div">
+                <H2>Most Played M/V</H2>
+                <video width="100%" height="relative" controls autoplay>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            <div id="right_div">
+                <h2>[BillBoard's Top10]</h2>
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Title</th>
+                            <th>Artist</th>
+                            <th>Album</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</a></h3>
+                            </td>
+                            <td>(19)Drip Too Hard</td>
+                            <td>Lil Baby</td>
+                            <td>Drip Harder</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>(19)Never Recover</td>
+                            <td>Lil Baby</td>
+                            <td>Drip Harder</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIA(feat.Drake)</td>
+                            <td>Bad Bunny</td>
+                            <td>MIA(feat.Drake)</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mo Bamba</td>
+                            <td>Sheck Wes</td>
+                            <td>Mo Bamba</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>SICKO MODE</td>
+                            <td>Travis Scott</td>
+                            <td>ASTROWORLD</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>(19)Close Friends</td>
+                            <td>Lil Baby</td>
+                            <td>Drip Harder</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>(19)Without Me</td>
+                            <td>Halsey</td>
+                            <td>Without Me</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>FLIP THE SWITCH(feat.Drake)</td>
+                            <td>Quavo</td>
+                            <td>QUAVO HUNCHO</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>(19)Taki Taki(feat.Selena Gomez, Ozuna, Cardi B)</td>
+                            <td>DJ Snake</td>
+                            <td>Taki Taki</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Lucid Dreams</td>
+                            <td>JuiceWRLD</td>
+                            <td>Goodbye & Good Riddance</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="footer_div">
+            <div id="p2">
+                <h4>[Currently Played]</h4>
+            </div>
+            <img id="album1" src="album1.jpg">
+            <img id="album2" src="album2.jpg">
+            <img id="album3" src="album3.jpg">
+            <img id="album4" src="album4.jpg">
+            <img id="album5" src="album5.jpg">
+            <img id="album6" src="album6.jpg">
+            <img id="album7" src="album7.jpg">
+            <img id="album8" src="album8.jpg">
+            <img id="album9" src="album9.jpg">
+            <img id="album10" src="album10.jpg">
+            <!-- <img id="album11" src="album11.jpg"> -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
